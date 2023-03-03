@@ -1,0 +1,307 @@
+body {
+    background-image: url("../img/bg3.jpg");
+    background-size: cover;
+
+    font-family: 'Antonio', sans-serif;
+    padding: 0;
+    box-sizing: border-box;
+    flex-wrap: nowrap;
+}
+
+:root {
+    --TERRA: #6f2ed6;
+    --MERCÚRIO: #419db9;
+    --VENUS: #A34D28;
+    --MARTE: #d14e33;
+    --JUPITER: #d93b36;
+    --SATURNO: #cb5020;
+    --URANO: #1ec2a1;
+    --NETUNO: #2d68f0;
+
+}
+
+
+.all {
+    display: flex;
+    justify-content: space-around;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    font-weight: bold;
+    align-items: center;
+}
+
+.cabecalho h1 {
+    font-size: 50px;
+}
+
+.cabecalho a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    margin: 0px 50px;
+    font-size: 18px;
+
+}
+
+.itens {
+    margin-top: 25px;
+}
+
+.figuras {
+    margin-top: 50px;
+}
+
+#figura2,
+#figura3 {
+    display: none;
+}
+
+
+
+.geologia {
+    transform: translate(-100%, 50%);
+    position: absolute;
+
+}
+
+.corpo {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+
+.info {
+    color: white;
+    width: 40%;
+}
+
+.nome-planeta {
+    font-size: 70px;
+}
+
+.infoParagrafo {
+    font-size: 24px;
+}
+
+.info a {
+    text-decoration: none;
+    color: lightslategray;
+    font-size: 16px;
+}
+
+.botoes {
+    display: flex;
+    flex-direction: column;
+}
+
+.botao {
+    padding: 10px;
+    margin: 5px;
+    background-color: rgb(255, 255, 255, 0);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border: 1px solid rgba(211, 211, 211, 0.301);
+    cursor: pointer;
+    transition: 1s;
+}
+
+.botoes span {
+    color: rgb(211, 211, 211, 0.7);
+}
+
+
+.focoBotao {
+    background-color: #6f2ed6;
+}
+
+
+.curiosidades {
+    display: flex;
+    position: absolute;
+    color: whitesmoke;
+    width: 100%;
+    margin-top: 40px;
+    bottom: 0;
+}
+
+.card {
+    margin: 0 20px;
+    border: 1px solid rgba(211, 211, 211, 0.301);
+    width: calc(100% / 4);
+    padding: 0px 10px;
+    border-radius: 6px;
+
+}
+
+.card h3 {
+    color: rgb(148, 159, 170);
+}
+
+.actv {
+    color: red;
+}
+
+/*Animações
+*/
+.spin {
+    animation: spin 1s linear;
+}
+
+.esconder {
+    animation: esconder 1s linear;
+}
+
+.mostrar {
+    animation: mostrar 1s linear;
+}
+
+.aparecePlaneta {
+    animation: aparecePlaneta 1.5s forwards;
+}
+
+.somePlaneta {
+    animation: somePlaneta 1.5s forwards;
+}
+
+.removeTexto {
+    animation: removeTexto 3s forwards;
+}
+
+.removeCuriosidades {
+    animation: removeCuriosidades 3s forwards;
+}
+
+@keyframes spin {
+    0% {
+        -webkit-transform: rotate(180deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes esconder {
+
+    100% {
+        opacity: 0;
+        -webkit-transform: translateY(+50%);
+    }
+}
+
+@keyframes mostrar {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(+100%);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}
+
+
+@keyframes somePlaneta {
+
+    0% {
+
+        transform: translateX(0%) scale(1.0);
+    }
+
+    100% {
+
+
+        transform: translateX(-80%) scale(0);
+    }
+}
+
+@keyframes aparecePlaneta {
+    0% {
+        transform: translateX(+50%) scale(0.1);
+    }
+
+    100% {
+
+        transform: translateX(0%) scale(1.0);
+    }
+
+}
+
+@keyframes removeTexto {
+    0% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    50% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes removeCuriosidades {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    50% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .all {
+        display: block;
+        width: 100%;
+    }
+
+    .corpo {
+        margin: 0 auto;
+    }
+
+    .info {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .curiosidades {
+        position: relative;
+    }
+
+    .cabecalho {
+        display: block;
+        text-align: center;
+    }
+
+    .cabecalho a {
+        margin: 10px 20px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .all img {
+        width: 100%;
+    }
+
+    .geologia {
+        width: 200px !important;
+    }
+}

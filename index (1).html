@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@200&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+
+<body>
+    <header class="cabecalho">
+        <h1>OS PLANETAS</h1>
+        <div class="itens">
+            <a href="#">MERCÚRIO</a>
+            <a href="#">VENUS</a>
+            <a href="#" class="actv">TERRA</a>
+            <a href="#">MARTE</a>
+            <a href="#">JUPITER</a>
+            <a href="#">SATURNO</a>
+            <a href="#">URANO</a>
+            <a href="#">NETUNO</a>
+        </div>
+    </header>
+
+    <section class="all" id="referencia" data-referencia='TERRA'>
+
+        <section class="corpo">
+            <div id="figura" class="figuras">
+                <img id=imgPrincipal src="img/planetas/terra.svg" alt="TERRA">
+            </div>
+
+            <div id="figura2" class="figuras">
+                <img src="img/planetas/terra2.svg">
+            </div>
+
+            <div id="figura3" class="figuras geologica">
+                <img src="img/planetas/terra3.svg">
+                <img class="geologia" src="img/planetas/geology-earth.png">
+            </div>
+        </section>
+
+        <div class="info">
+            <h1 class="nome-planeta">TERRA</h1>
+            <div class="infoParagrafo">
+                <p>A Terra é o terceiro planeta mais próximo do Sol, o mais denso e o quinto maior dos oito planetas do
+                    Sistema Solar. É também o maior dos quatro planetas telúricos. É por vezes designada como Mundo ou
+                    Planeta Azul. Lar de milhões de espécies de seres vivos, incluindo os humanos, a Terra é o único
+                    corpo celeste onde é conhecida a existência de vida..</p>
+                <font><a href='https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal'
+                        target="_blank">Fonte:
+                        wikipedia</a>
+                </font>
+            </div>
+
+
+            <div class="botoes">
+
+                <button id="um" class="botao focoBotao"><span>1º</span> Camada</button>
+                <button id="dois" class="botao"><span>2º</span> Estrutura Interna</button>
+                <button id="tres" class="botao"><span>3º</span> Superfície Geologica</button>
+            </div>
+        </div>
+    </section>
+
+    <div class="curiosidades">
+        <div class="card">
+            <h3>TEMPO DE ROTAÇÃO</h3>
+            <h1 id="rotacao">0,99 Dias</h1>
+        </div>
+
+        <div class="card">
+            <h3>PÉRIODO ORBITAL</h3>
+            <h1 id="orbital">365,26 Dias</h1>
+        </div>
+
+        <div class="card">
+            <h3>RAIO</h3>
+            <h1 id="raio">6.371 KM</h1>
+        </div>
+
+        <div class="card">
+            <h3>TEMPERATURA MÉDIA</h3>
+            <h1 id="temp">16ºC</h1>
+        </div>
+    </div>
+
+    <footer>
+        Image by <a
+            href="https://www.freepik.com/free-vector/gradient-galaxy-background_14121195.htm#query=space%20background&position=19&from_view=keyword&track=ais">Freepik</a>
+    </footer>
+
+
+    <script src="js/MudaPlaneta.js"></script>
+    <script src="js/MudaInfos.js"></script>
+    <script src="js/Botoes.js"></script>
+    <script src="js/Estilizacoes.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
