@@ -211,7 +211,7 @@ footer {
     }
 
     .card {
-        width: 200px;
+        padding:10px;
         margin: 10px;
     }
 }
