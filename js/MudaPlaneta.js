@@ -45,7 +45,7 @@ function tiraPlaneta() {
 
             aparecePlaneta(e)
             mudaText()
-        }, 1600)
+        }, 1800)
     })
 }
 
@@ -115,10 +115,3 @@ function removeCuriosidades() {
         container.classList.remove('removeCuriosidades')
     }, 3000)
 }
-
-
-
-
-
-
-
